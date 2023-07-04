@@ -1,0 +1,14 @@
+.baner-img{
+    height: 669px;
+    background-size: cover;
+}
+
+.baner-img {
+    height: 669px;
+    background-size: cover;
+   /* media queries */
+     @media (max-width: 768px ) {  
+     height: 100%;
+   }
+   
+ }

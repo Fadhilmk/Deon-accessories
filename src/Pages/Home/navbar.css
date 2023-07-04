@@ -1,0 +1,100 @@
+
+    .top{
+        z-index: 999;
+        position: sticky;
+        top: 0;
+      }
+
+
+.navabar{
+  background-color: #273179;
+}
+.catrgory{
+    /* margin-top: 8px; */
+   
+    color: #000;
+
+}
+.navbar-text a {
+    color: #ffffff;
+    
+    font-weight: 400;
+    font-size: 19px;
+
+}
+.navbar-text a:hover {
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+.icons{
+    padding-right: 20px;
+}
+
+
+.icons-setting {
+    display: flex;
+   /* media queries */
+     @media (max-width: 768px ) {  
+    display: none;
+   }
+   
+ }
+
+
+
+.drop-aling{
+    color: #000;
+}
+
+
+
+.dropdown-menu {
+    height: 311px;
+    line-height: 20px;
+    --bs-dropdown-zindex: 1000;
+    --bs-dropdown-min-width: 13rem;
+    --bs-dropdown-padding-x: 0;
+    --bs-dropdown-padding-y: 0.5rem;
+    --bs-dropdown-spacer: 0.125rem;
+    --bs-dropdown-font-size: 1rem;
+    --bs-dropdown-color: #050505;
+    --bs-dropdown-bg: #000;
+    --bs-dropdown-border-color: var(--bs-border-color-translucent);
+    --bs-dropdown-border-radius: var(--bs-border-radius);
+    --bs-dropdown-border-width: var(--bs-border-width);
+    --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
+    --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
+    --bs-dropdown-divider-margin-y: 0.5rem;
+    --bs-dropdown-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --bs-dropdown-link-color: var(--bs-body-color);
+    --bs-dropdown-link-hover-color: var(--bs-body-color);
+    --bs-dropdown-link-hover-bg: #000;
+    --bs-dropdown-link-active-color: #fff;
+    --bs-dropdown-link-active-bg: #0d6efd;
+    --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
+    --bs-dropdown-item-padding-x: 1rem;
+    --bs-dropdown-item-padding-y: 0.25rem;
+    --bs-dropdown-header-color: #6c757d;
+    --bs-dropdown-header-padding-x: 3rem;
+    --bs-dropdown-header-padding-y: 0.5rem;
+    position: absolute;
+    z-index: var(--bs-dropdown-zindex);
+    display: none;
+    min-width: var(--bs-dropdown-min-width);
+    padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
+    margin: 0;
+    font-size: var(--bs-dropdown-font-size);
+    color: var(--bs-dropdown-color);
+    text-align: left;
+    list-style: none;
+    background-color: var(--bs-dropdown-bg);
+    background-clip: padding-box;
+    border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+    border-radius: var(--bs-dropdown-border-radius);
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #000;
+    background-color: var(--bs-dropdown-link-hover-bg);
+}
