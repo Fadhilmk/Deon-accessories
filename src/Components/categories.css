@@ -1,0 +1,100 @@
+*{
+    background-color: black;
+}
+
+.responsive-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Adjust the height as per your requirement */
+  }
+  
+  .card {
+         margin-bottom: 20px;
+         cursor: pointer;
+         transition: transform 0.3s;
+      }
+      
+      .card:hover {
+        transform: scale(1.05);
+      }
+      
+  
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .overlay {
+    position: relative;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52%, -400%);
+    color: #ffffff;
+    font-size: 42px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #fff;
+  }
+  
+    .overlay1 {
+      position: relative;
+    }
+    
+    .image-text1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-52%, -400%);
+      color: #ffffff;
+      font-size: 42px;
+      font-family: sans-serif;
+      font-weight: bold;
+      text-align: center;
+      background-color: transparent;
+      border: 2px solid #fff;
+    }
+
+ 
+@media (max-width: 768px) {
+  .image-text {
+    font-size: 6vw; 
+  }
+
+  .image-text1 {
+    font-size: 4vw;  
+    transform: translate(-52%, -357%);
+  }
+  .image-text2 {
+    font-size: 5vw; 
+    margin-left: 5px;
+  }
+}
+
+
+    .overlay2 {
+      position: relative;
+    }
+    
+    .image-text2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-52%, -312%);
+      color: #ffffff;
+      font-size: 42px;
+      font-family: sans-serif;
+      font-weight: bold;
+      text-align: center;
+      background-color: transparent;
+      border: 2px solid #fff;
+    }
+
+  
+    
