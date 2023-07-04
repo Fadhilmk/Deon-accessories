@@ -1,0 +1,47 @@
+
+.icons-setting-footer {
+    display: flex;
+    display: none;
+   /* media queries */
+     @media (max-width: 768px ) {  
+       display: contents;
+       display: flex;
+       align-items: center;
+      
+   }
+   
+ }
+
+ .navbar-text-footer  a {
+    
+   
+      
+      display: inline;
+     color: #fff;
+   
+    
+   }
+   
+ 
+
+
+ .navabar-footer {
+    
+    display: none;
+   /* media queries */
+     @media (max-width: 768px ) {  
+      
+      display: inline;
+  background-color: #273179;
+   
+    
+   }
+   
+ }
+
+ .icons-footer{
+    padding-right: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+ }
