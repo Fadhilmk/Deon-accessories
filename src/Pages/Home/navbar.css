@@ -6,9 +6,28 @@
       }
 
 
-.navabar{
-  background-color: #273179;
-}
+/* .navabar{
+    background-color: #00000045;
+  height: 93px;
+} */
+
+.navabar {
+    background-color: #00000045;
+  height: 93px;
+   /* media queries */
+     @media (max-width: 768px ) {  
+        height: 95px;
+        background-color: #0000008f;
+        .logo{
+            width: 111px;
+            height: 78px;
+            margin-top: -12px;
+        }
+   }
+   
+ }
+
+
 .catrgory{
     /* margin-top: 8px; */
    
@@ -27,6 +46,11 @@
     text-decoration: none;
 }
 
+a:active {
+    color: #fff;
+  
+ }
+
 .icons{
     padding-right: 20px;
 }
@@ -36,7 +60,8 @@
     display: flex;
    /* media queries */
      @media (max-width: 768px ) {  
-    display: none;
+    /* display: none; */
+    
    }
    
  }
@@ -46,7 +71,11 @@
 .drop-aling{
     color: #000;
 }
-
+.logo{
+    width: 111px;
+    height: 78px;
+    margin-top: -11px;
+}
 
 
 .dropdown-menu {
@@ -97,4 +126,53 @@
 .dropdown-item:focus, .dropdown-item:hover {
     color: #000;
     background-color: var(--bs-dropdown-link-hover-bg);
+}
+
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: var(--bs-navbar-color);
+    background-color: #ffd83b;
+    border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+    margin-top: -25px;
+}
+
+.icons-setting {
+    display: flex;
+   /* media queries */
+     @media (max-width: 768px ) {  
+    display: none;
+   }
+   
+ }
+
+
+
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+   /* media queries */
+     @media (max-width: 768px ) {  
+        background-color: #00000045;
+   }
+   
+ }
+.navbar-nav .dropdown-menu {
+    position: static;
+    background-color: #f3f3f336;
+}
+
+.navbar-text a:hover {
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: rgb(255 255 255);
 }

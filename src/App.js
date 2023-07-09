@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../src/index.css'
 import Home from './Components/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navb from './Pages/Home/Navb'
@@ -12,6 +12,7 @@ import Seats from './Pages/Categories/Seats'
 import Wheels from './Pages/Categories/Wheels'
 import ContactUs from './Components/Contactus'
 import FooterNav from './Pages/Home/MobileView/FooterNav'
+import Footer from './Components/Footer/Footer'
 
 
 
@@ -19,14 +20,15 @@ import FooterNav from './Pages/Home/MobileView/FooterNav'
 
 function App() {
   return (
-    <div className='app'>
+    <div className='body'>
         <BrowserRouter>
                  <Navb></Navb>
-          <FooterNav/>
+                  
+          
           <Routes>
              <Route exact path   = "/" Component={Home}/>
                <Route  path   = "/about" Component={About}/>
-               <Route  path   = "/helmt" Component={Helmet}/>
+               <Route  path   = "/helmet" Component={Helmet}/>
                <Route  path   = "/ridinggears" Component={Ridinggears}/>
                <Route  path   = "/jacket" Component={Jackets}/>
                <Route  path   = "/automotive" Component={Automotive}/>
@@ -35,9 +37,11 @@ function App() {
                <Route  path   = "/contact" Component={ContactUs}/>
               
              </Routes>
-
+          
             
         </BrowserRouter>
+     
+        <FooterNav/>
         </div>
   )
 }

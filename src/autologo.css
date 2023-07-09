@@ -1,0 +1,93 @@
+/* autologo.css */
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(250px * 6);
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6));
+  }
+}
+
+.slider-container {
+  display: flex; /* Enable flexbox */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.slide-track {
+  display: flex; /* Display slides in a row */
+  transition: transform 0.5s ease; /* Add a transition effect when changing slides */
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
+
+/* .autologo-aling{
+
+  margin-top: 19px;
+} */
+
+
+
+.autologo-aling {
+    
+  margin-top: 19px;
+ /* media queries */
+   @media (max-width: 425px ) {  
+    
+    margin-top: 315px;
+ 
+  
+ }
+ 
+}
+
+/* @media (max-width:375px){
+  .slider-container{
+    display: none;
+  }
+} */

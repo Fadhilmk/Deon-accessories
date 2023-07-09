@@ -3,7 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
- import  './navbar.css'
+import  './navbar.css';
+import logo8 from '../../assets/logo8.png'
+
+
 
 
 
@@ -12,7 +15,7 @@ export default function Navb() {
     <div className='top'>
       <Navbar  expand="lg" className="navabar">
       <Container className='navbar-text'>
-        <Navbar.Brand href="#home">Logo</Navbar.Brand>
+        <Navbar.Brand href="/"><img className='logo'  src= {logo8} alt="" /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className=" ms-auto">
@@ -41,7 +44,7 @@ export default function Navb() {
             <Nav.Link href="/contact">Contact Us</Nav.Link>
           </Nav>
 
-          <Nav className="ms-auto">
+          <Nav  className="ms-auto">
                <div className='icons-setting'   >
               <Nav.Link href="/search">
                 <i className="fas fa-search icons"></i>
