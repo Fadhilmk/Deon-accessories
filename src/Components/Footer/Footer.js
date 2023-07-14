@@ -57,11 +57,7 @@ const Footer = () => {
               <form action="#">
                 <input type="text" placeholder="Enter your mail" />
                 <button
-                  style={{
-                    background: "#198754",
-                    border: "#198754",
-                    color: "#fff",
-                  }}
+                  
                   type="submit"
                   className="site-btn"
                 >

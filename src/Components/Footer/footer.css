@@ -163,7 +163,7 @@ Footer
   border-radius: 50%;
 }
 
-/contact \/
+
 .footer_widget_social a {
   display: inline-block;
   height: 41px;
@@ -379,4 +379,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   color: #bababa;
   font-family: sans-serif;
 }
+.site-btn{
+  background: rgb(217 184 51);
+    border: rgb(25, 135, 84);
+    /* color: rgb(255, 255, 255); */
+    color: #000;
+    font-weight: bold;
+}
+
 

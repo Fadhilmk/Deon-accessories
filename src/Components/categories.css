@@ -103,6 +103,7 @@
   text-align: center;
   background-color: transparent;
   border: 2px solid #fff;
+  
 }
 
 @media (max-width: 768px) {
@@ -113,6 +114,7 @@
   .image-text-rg {
     font-size: 6vw;
     font-weight: bold;
+    
 
   }
   

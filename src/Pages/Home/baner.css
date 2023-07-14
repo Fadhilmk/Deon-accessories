@@ -3,6 +3,20 @@
     background-size: cover;
 }
 
+
+
+.curesel-aling {
+  position: relative;
+ 
+  height:fit-content;
+ /* media queries */
+   @media (max-width: 320 ) {  
+    height:50%;
+ }
+ 
+}
+
+
 .baner-img {
     height: 450px;
     background-size: cover;
@@ -27,6 +41,7 @@
   overflow: hidden;
   border: 3px solid #ffd83b;
   border-radius: 15px;
+ 
 }
 .baner-second{
   width: 100%;

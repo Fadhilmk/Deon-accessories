@@ -15,9 +15,9 @@ const Featurespro = () => {
 
   return (
     <div className="ftrs-pro">
-         <h1 className="freature-product-head">Featrure product</h1>
-   <Container>
-     <Row className="mt-5"> 
+         <h1 className="freature-product-head">Feature product</h1>
+   <Container className="feture-container">
+     <Row className="mt-5 "> 
       <Col md={4} lg={4} >
       <Card className="feature-card-aling" style={{ width: '18rem' }}>
       <Card.Img className="feature-img" variant="top" src={require("../src/assets/img/Feature/feature-5.jpg")} />
