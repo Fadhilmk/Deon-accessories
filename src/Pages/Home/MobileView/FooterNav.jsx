@@ -1,35 +1,25 @@
 import React from 'react'
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import './footernav.css'
+import { Row,Col } from 'react-bootstrap';
 
 export default function FooterNav() {
   return (
-    <div>
-      <Navbar fixed="bottom" expand="sm" className="navabar-footer">
-      <Container className='navbar-text-footer'>
-        
-       
-        {/* <Navbar.Collapse id="basic-navbar-nav"> */}
-          <Nav className="ms-auto  me-auto  ">
-               <div className='icons-setting-footer'   >
-              <Nav.Link href="#">
-                <i className="fas fa-search icons-footer"></i>
-              </Nav.Link>
-              <Nav.Link href="#">
-                <i className="fas fa-heart icons-footer"></i>
-              </Nav.Link>
-              <Nav.Link href="/">
-                <i className="fas fa-user icons-footer"></i>
-              </Nav.Link>
-              </div>
-            </Nav>
+    <div  className='mobile-viwe'>
+       <Container fluid  className='mobile-nav-aling' >
+        <Row>
+          <Col md={12}>
+               <div   className='footer-nav-icon'> 
+               <a href='./'> <i   className="fas fa-home icons-footer"></i></a>
+               <i className="fas fa-search icons-footer"></i>
+               <i className="fas fa-heart icons-footer"></i> 
+               <i className="fas fa-user icons-footer"></i>
+               </div>
+          </Col>
+        </Row>
+       </Container> 
 
-        {/* </Navbar.Collapse> */}
-      </Container>
-    </Navbar>
 
     </div>
   )

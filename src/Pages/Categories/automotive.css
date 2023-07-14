@@ -1,0 +1,21 @@
+.container {
+    margin-top: 30px;
+   
+  }
+  
+  .card-image {
+    margin-bottom: 50px;
+    
+    
+  }
+  
+  .card-image:hover {
+    
+  }
+
+@media (max-width:768px){
+    .card{
+        margin-top: 15px;
+    }
+   
+}
